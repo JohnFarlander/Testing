@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - TravelWise</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+       
+        .about-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 5%;
+        }
+
+        .mission-section {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .mission-section h2 {
+            color: var(--dark-color);
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .mission-section p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-card h3 {
+            color: var(--dark-color);
+            margin-bottom: 1rem;
+        }
+
+        .feature-card p {
+            color: #666;
+        }
+
+        .team-section {
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .team-section h2 {
+            color: var(--dark-color);
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .team-member {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-member img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .team-info {
+            padding: 1.5rem;
+        }
+
+        .team-info h3 {
+            color: var(--dark-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .team-info p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .social-links-team {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .social-links-team a {
+            color: var(--dark-color);
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+
+        .social-links-team a:hover {
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .about-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .mission-section h2,
+            .team-section h2 {
+                font-size: 2rem;
+            }
+
+            .about-content {
+                padding: 2rem 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-plane-departure"></i>
+            TravelWise
+        </div>
+        <div class="nav-links">
+            <a href="./index.html">Home</a>
+            <a href="./about.html" class="active">About Us</a>
+            <a href="./contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <section class="about-hero">
+        <div class="hero-content">
+            <h1>About TravelWise</h1>
+            <p>Empowering travelers with knowledge and inspiration</p>
+        </div>
+    </section>
+
+    <div class="about-content">
+        <section class="mission-section">
+            <h2>Our Mission</h2>
+            <p>At TravelWise, we believe that travel has the power to transform lives, broaden perspectives, and create lasting memories. Our mission is to make travel planning easier and more accessible by providing accurate, real-time information and inspiring destination content to travelers worldwide.</p>
+        </section>
+
+        <section class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-globe"></i>
+                <h3>Global Coverage</h3>
+                <p>Access information about destinations worldwide with accurate location data and local time information.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-clock"></i>
+                <h3>Real-Time Updates</h3>
+                <p>Stay informed with real-time updates about your destination's local time and important information.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-camera"></i>
+                <h3>Visual Inspiration</h3>
+                <p>Discover the beauty of destinations through our curated collection of high-quality images.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-map-marked-alt"></i>
+                <h3>Smart Search</h3>
+                <p>Find your next destination easily with our intelligent search functionality and detailed results.</p>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://source.unsplash.com/400x400/?professional,person" alt="Sarah Johnson">
+                    <div class="team-info">
+                        <h3>Sarah Johnson</h3>
+                        <p>Founder & CEO</p>
+                        <div class="social-links-team">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://source.unsplash.com/401x401/?professional,person" alt="Michael Chen">
+                    <div class="team-info">
+                        <h3>Michael Chen</h3>
+                        <p>Lead Developer</p>
+                        <div class="social-links-team">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://source.unsplash.com/402x402/?professional,person" alt="Emily Rodriguez">
+                    <div class="team-info">
+                        <h3>Emily Rodriguez</h3>
+                        <p>UX Designer</p>
+                        <div class="social-links-team">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2024 TravelWise. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
