@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelWise - Explore Your Dream Destinations</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-plane-departure"></i>
+            TravelWise
+        </div>
+        <div class="nav-links">
+            <a href="./index.html" class="active">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./contact.html">Contact Us</a>
+        </div>
+        <div class="search-container">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search destinations...">
+                <button type="button" id="searchButton"><i class="fas fa-search"></i></button>
+                <button type="button" id="clearButton">Clear</button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="apiError" class="api-error" style="display: none;">
+        <p>⚠️ API Configuration Required</p>
+        <p>Please configure your API keys in config.js to enable search functionality.</p>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="search-results" id="searchResults">
+                <!-- Results will be dynamically inserted here -->
+            </div>
+            
+            <div class="hero-content">
+                <h1>EXPLORE<br>DREAM<br>DESTINATION</h1>
+                <p>Discover unfamiliar territories, embrace diverse cultures, and find the destinations that ignite your sense of wonder.</p>
+                <div class="cta-buttons">
+                    <button class="cta-button primary">Book Now</button>
+                    <button class="cta-button secondary">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-destinations">
+            <h2>Popular Destinations</h2>
+            <div class="destination-grid">
+                <div class="destination-card">
+                    <img src="https://source.unsplash.com/400x300/?paris" alt="Paris">
+                    <div class="card-content">
+                        <h3>Paris, France</h3>
+                        <p>The City of Light awaits your discovery</p>
+                        <button class="explore-btn">Explore</button>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="https://source.unsplash.com/400x300/?tokyo" alt="Tokyo">
+                    <div class="card-content">
+                        <h3>Tokyo, Japan</h3>
+                        <p>Where tradition meets innovation</p>
+                        <button class="explore-btn">Explore</button>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="https://source.unsplash.com/400x300/?santorini" alt="Santorini">
+                    <div class="card-content">
+                        <h3>Santorini, Greece</h3>
+                        <p>Paradise in the Aegean Sea</p>
+                        <button class="explore-btn">Explore</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2024 TravelWise. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./config.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html> 
